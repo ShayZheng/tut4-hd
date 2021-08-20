@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+// define the data type 
 namespace tut4_hd.Models
 {
     public class Unit
@@ -10,6 +10,8 @@ namespace tut4_hd.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public int studentId { get; set; }
+        public int StudentId { get; set; }
+
+        public virtual Student Student { get; set; }
     }
 }

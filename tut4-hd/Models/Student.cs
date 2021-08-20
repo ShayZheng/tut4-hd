@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+// define the data type 
 namespace tut4_hd.Models
 {
     public class Student
@@ -12,5 +12,8 @@ namespace tut4_hd.Models
         public string FirstName { get; set; }
         
         public string LastName { get; set; }
+
+        public virtual ICollection<Unit> Unit { get; set; }
+
     }
 }
